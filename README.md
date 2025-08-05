@@ -77,12 +77,17 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/adrianhajdin/ai-resume-analyzer.git
 cd ai-resume-analyzer
+```
 
 ### 📦 Install Dependencies
+```bash
 npm install
+```
 
 ### 🚀 Run the Project
+```bash
 npm run dev
+```
 
 
 
