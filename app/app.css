@@ -4,7 +4,7 @@
 
 @theme {
   --font-sans: "Mona Sans", ui-sans-serif, system-ui, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-dark-200: #475467;
   --color-light-blue-100: #c1d3f81a;
   --color-light-blue-200: #a7bff14d;
@@ -27,22 +27,22 @@ main {
   @apply min-h-screen pt-10;
 }
 h1 {
-  @apply text-6xl  text-gradient leading-tight tracking-[-2px] font-semibold;
+  @apply text-6xl text-white leading-tight tracking-[-2px] font-semibold;
 }
 
 h2 {
-  @apply text-3xl text-dark-200;
+  @apply text-3xl text-gray-200;
 }
 
 label {
-  @apply text-dark-200;
+  @apply text-gray-200;
 }
 input {
-  @apply w-full p-4 inset-shadow rounded-2xl focus:outline-none bg-white;
+  @apply w-full p-4 rounded-2xl focus:outline-none bg-black/30 backdrop-blur-sm border border-red-500/30 text-white placeholder-gray-400 focus:border-red-400;
 }
 
 textarea {
-  @apply w-full p-4 inset-shadow rounded-2xl focus:outline-none bg-white;
+  @apply w-full p-4 rounded-2xl focus:outline-none bg-black/30 backdrop-blur-sm border border-red-500/30 text-white placeholder-gray-400 focus:border-red-400;
 }
 
 form {
@@ -54,10 +54,10 @@ form {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
   }
   .gradient-border {
-    @apply bg-gradient-to-b from-light-blue-100 to-light-blue-200 p-4 rounded-2xl;
+    @apply bg-gradient-to-b from-red-900/30 to-red-800/20 p-4 rounded-2xl border border-red-500/30;
   }
   .primary-button {
-    @apply primary-gradient text-white rounded-full px-4 py-2 cursor-pointer w-full;
+    @apply bg-gradient-to-r from-red-600 to-red-800 text-white rounded-full px-4 py-2 cursor-pointer w-full hover:from-red-700 hover:to-red-900 transition-all duration-200 shadow-lg;
   }
   .resume-nav {
     @apply flex flex-row justify-between items-center p-4 border-b border-gray-200;
@@ -65,14 +65,14 @@ form {
   .resume-summary {
     @apply flex flex-row items-center justify-center p-4 gap-4;
     .category {
-      @apply flex flex-row gap-2 items-center bg-gray-50 rounded-2xl p-4 w-full justify-between;
+      @apply flex flex-row gap-2 items-center bg-black/20 backdrop-blur-sm rounded-2xl p-4 w-full justify-between border border-red-500/20;
     }
   }
   .back-button {
-    @apply flex flex-row items-center gap-2 border border-gray-200 rounded-lg p-2 shadow-sm;
+    @apply flex flex-row items-center gap-2 border border-red-500/30 rounded-lg p-2 shadow-sm bg-black/20 backdrop-blur-sm text-white;
   }
   .auth-button {
-    @apply primary-gradient rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white;
+    @apply bg-gradient-to-r from-red-600 to-red-800 rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white hover:from-red-700 hover:to-red-900 transition-all duration-200 shadow-lg;
   }
   .main-section {
     @apply flex flex-col items-center gap-8 pt-12 mx-15 pb-5;
@@ -85,7 +85,7 @@ form {
   }
 
   .resume-card {
-    @apply flex flex-col gap-8 h-[560px] w-full lg:w-[450px] xl:w-[490px] bg-white rounded-2xl p-4;
+    @apply flex flex-col gap-8 h-[560px] w-full lg:w-[450px] xl:w-[490px] bg-black/30 backdrop-blur-sm rounded-2xl p-4 border border-red-500/20;
   }
 
   .resume-card-header {
@@ -97,7 +97,7 @@ form {
   }
 
   .navbar {
-    @apply flex flex-row justify-between items-center bg-white rounded-full p-4 w-full px-10 max-w-[1200px] mx-auto;
+    @apply flex flex-row justify-between items-center bg-black/20 backdrop-blur-sm rounded-full p-4 w-full px-10 max-w-[1200px] mx-auto border border-red-500/30;
   }
 
   .score-badge {
